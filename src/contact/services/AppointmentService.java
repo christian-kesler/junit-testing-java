@@ -1,40 +1,45 @@
+//============================================================================
+// Project Name: Contact Service 
+// Author      : Christian Kesler
+// Version     : 1.1
+// Description : Java classes and JUnit tests to verify functionality 
+//============================================================================
 package contact.services;
-//Christian Kesler
-
 import java.util.Date;
 import java.util.Vector;
 
+// the Appointment Service class
 public class AppointmentService {
-	public static int intID = 1;
+	public static int intId = 1;
 	
+	// New Vector AppointmentList is created to store Appointments
 	static Vector<Appointment> AppointmentList = new Vector<Appointment>(0);
 
+	// Add Appointment method to Appointment Service  
 	public static void addAppointment(Date date, String description) {
-		Appointment appointment = new Appointment(Integer.toString(intID), date, description);
+		Appointment appointment = new Appointment(Integer.toString(intId), date, description);
 		AppointmentList.add(appointment);
-		++intID;
+		++intId;
 	}
 	
-	public static void removeAppointment(String appointmentID) {
+	// Remove Appointment method from Appointment Service 
+	public static void removeAppointment(String appointmentId) {
 		for (int i = 0; i < AppointmentList.size(); ++i) {
-			if (AppointmentList.get(i).getAppointmentID() != null) {
-				if (AppointmentList.get(i).getAppointmentID().equals(appointmentID)) {
+			if (AppointmentList.get(i).getAppointmentId() != null) {
+				if (AppointmentList.get(i).getAppointmentId().equals(appointmentId)) {
 					AppointmentList.remove(i);
 				}
 			}
 		}
 	}
-	public static Appointment findAppointment(String appointmentID) {
+	
+	// Find Appointment method in Appointment Service 
+	public static Appointment findAppointment(String appointmentId) {
 		Appointment appointment = null;
 		for (int i = 0; i < AppointmentList.size(); ++i) {
-//			System.out.print("The size of the array: " + AppointmentList.size() + "\n");
-//			System.out.print("The ID we are looking for: " + appointmentID + "\n");
-//			System.out.print("The ID the loop has found: " + AppointmentList.get(i).getAppointmentID() + "\n");
-			if (AppointmentList.get(i).getAppointmentID() != null) {
-				if (AppointmentList.get(i).getAppointmentID().equals(appointmentID)) {
-//					System.out.print("The appointment the loop likes: " + AppointmentList.get(i) + "\n");
+			if (AppointmentList.get(i).getAppointmentId() != null) {
+				if (AppointmentList.get(i).getAppointmentId().equals(appointmentId)) {
 					appointment = AppointmentList.get(i);
-//					System.out.print("The appointment the loop assigned: " + appointment + "\n");
 				}
 			}
 		}

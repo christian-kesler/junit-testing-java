@@ -1,59 +1,66 @@
+//============================================================================
+// Project Name: Contact Service 
+// Author      : Christian Kesler
+// Version     : 1.1
+// Description : Java classes and JUnit tests to verify functionality 
+//============================================================================
 package contact.services;
-//Christian Kesler
-
 import java.util.Vector;
 
+// The Task Service class
 public class TaskService {
-	public static int intID = 1;
-		
+	public static int intId = 1;
+
+	// New Vector TaskList is created to store Tasks
 	static Vector<Task> TaskList = new Vector<Task>(0);
 
+	// Add Task method to Task Service  
 	public static void addTask(String name, String description) {
-		Task task = new Task(Integer.toString(intID), name, description);
+		Task task = new Task(Integer.toString(intId), name, description);
 		TaskList.add(task);
-		++intID;
+		++intId;
 	}
 		
-	public static void removeTask(String taskID) {
+	// Remove Task method from Task Service  
+	public static void removeTask(String taskId) {
 		for (int i = 0; i < TaskList.size(); ++i) {
-			if (TaskList.get(i).getTaskID() != null) {
-				if (TaskList.get(i).getTaskID().equals(taskID)) {
+			if (TaskList.get(i).getTaskId() != null) {
+				if (TaskList.get(i).getTaskId().equals(taskId)) {
 					TaskList.remove(i);
 				}
 			}
 		}
 	}
-	public static Task findTask(String taskID) {
+	
+	// Find Task method in Task Service  
+	public static Task findTask(String taskId) {
 		Task task = null;
 		for (int i = 0; i < TaskList.size(); ++i) {
-//				System.out.print("The size of the array: " + TaskList.size() + "\n");
-//				System.out.print("The ID we are looking for: " + taskID + "\n");
-//				System.out.print("The ID the loop has found: " + TaskList.get(i).getTaskID() + "\n");
-			if (TaskList.get(i).getTaskID() != null) {
-				if (TaskList.get(i).getTaskID().equals(taskID)) {
-//						System.out.print("The task the loop likes: " + TaskList.get(i) + "\n");
+			if (TaskList.get(i).getTaskId() != null) {
+				if (TaskList.get(i).getTaskId().equals(taskId)) {
 					task = TaskList.get(i);
-//						System.out.print("The task the loop assigned: " + task + "\n");
 				}
 			}
 		}
 		return task;
 	}
 	
-	public static void setTaskName(String taskID, String input) {
+	// Set Task Name method in Task Service
+	public static void setTaskName(String taskId, String input) {
 		for (int i = 0; i < TaskList.size(); ++i) {
-			if (TaskList.get(i).getTaskID() != null) {
-				if (TaskList.get(i).getTaskID().equals(taskID)) {
+			if (TaskList.get(i).getTaskId() != null) {
+				if (TaskList.get(i).getTaskId().equals(taskId)) {
 					Task.setName(TaskList.get(i), input);
 				}
 			}
 		}
 	}
-	
-	public static void setTaskDescription(String taskID, String input) {
+
+	// Set Task Description method in Task Service
+	public static void setTaskDescription(String taskId, String input) {
 		for (int i = 0; i < TaskList.size(); ++i) {
-			if (TaskList.get(i).getTaskID() != null) {
-				if (TaskList.get(i).getTaskID().equals(taskID)) {
+			if (TaskList.get(i).getTaskId() != null) {
+				if (TaskList.get(i).getTaskId().equals(taskId)) {
 					Task.setDescription(TaskList.get(i), input);
 				}
 			}
