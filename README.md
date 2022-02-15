@@ -58,7 +58,7 @@ Most of the issues I ran into with this program involve setting up the JUnit lib
 Christian Kesler (a.k.a. KnowOne), who can be found on <a href='https://github.com/chris-kesler'>GitHub</a> and <a href='https://www.linkedin.com/in/christian-kesler/'>LinkedIn</a>
 </p>
 
-<h3>Authors</h3>
+<h3>Version History</h3>
 <ul>
 <li>
 v1.0.0
