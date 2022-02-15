@@ -1,4 +1,10 @@
 <html>
+<h2><a href="https://github.com/chris-kesler/SNHU_CS-320_Junit-Testing">Contact Service Classes:  JUnit Tests (Java) on GitHub</a></h2>
+
+<p>
+A group of Java classes and comprehensive Junit test cases that ensure class attributes abide by the specifications.
+</p>
+
 <h3>Description</h3>
 <p>
 This is a series of Java classes with various attributes that were designed around the specifications of the client.  There are three types of classes, each with constructors, getters, and setters as appropriate.  Each class type also has a corresponding Service class, which is designed to handle instances of the base class in a list format with a scaling ID number.  The classes communicate with each other in a variety of complex ways, and I incorporated JUnit tests that comprehensively ensure all interactions are handled properly.  Each of the six classes have a corresponding Junit test file, which have been run as coverage tests throughout development to ensure comprehensive testing is present.  The JUnit testing is thorough, offering multiple types of input and verifying expected behavior, both in nominal and exceptional cases.  The JUnit tests have been verified to cover all relevant lines of code with nearly 100% coverage project wide.  
