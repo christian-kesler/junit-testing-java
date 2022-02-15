@@ -38,7 +38,9 @@ public class TaskServiceTest {
 	@Test
 	@Order(2)
 	void test_TaskService_Constructor_Invalid() {
+		// Invalid name
 		TaskService.addTask("oneoneoneone", 	"ONE");
+		// Invalid description
 		TaskService.addTask("two", 				"twotwotwotwotwotwotwo");
 	}
 

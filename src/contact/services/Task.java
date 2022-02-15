@@ -29,7 +29,6 @@ public class Task {
 		    this.description = description;
 	    }
 	}
-
 	
 	// Task Id verifier
 	public static boolean verifyId(String input) {
@@ -60,7 +59,6 @@ public class Task {
     	return true;
 		}
 	}
-
 	
 	// Task Id getter
 	public String getTaskId() {
@@ -76,7 +74,6 @@ public class Task {
 	public String getDescription() {
 		return description;
 	}
-	
 	
 	// Task Id setter
 	public static void setId(Task task, String input) {

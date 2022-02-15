@@ -22,9 +22,7 @@ public class Appointment {
 	// The Appointment Constructor 
 	public Appointment(String appointmentId, Date date, String description) {
 		
-		// verifying input validity and creating object
-		
-		// checking for erroneous input and printing specific error message if found
+		// checking for erroneous input and printing specific error message if found before creating object
 		if(verifyId(appointmentId) && verifyDate(date) && verifyDescription(description)) {
 			this.appointmentId = appointmentId;
 			this.date = date;

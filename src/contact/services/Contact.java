@@ -36,7 +36,6 @@ public class Contact {
 	    }
 	}
 
-
 	// Contact Id verifier
 	public static boolean verifyId(String input) {
 		if(input == null || input.length()>contactIdMaxLength) {
@@ -86,7 +85,6 @@ public class Contact {
     	return true;
 		}
 	}
-
 	
 	// Contact Id getter
 	public String getContactId() {
@@ -112,7 +110,6 @@ public class Contact {
 	public String getAddress() {
 		return address;
 	}
-	
 	
 	// Contact first name setter
 	public static void setFirstName(Contact contact, String input) {

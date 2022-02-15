@@ -37,14 +37,18 @@ public class AppointmentServiceTest {
 	}
 	
 	// Test Appointment Service constructor with invalid input
+	@SuppressWarnings("deprecation")
 	@Test
 	@Order(2)
 	void test_AppointmentService_Constructor_Invalid() {
+		// Invalid date
 		AppointmentService.addAppointment(new Date(1, 10, 10, 10, 10, 10), 		"ONE");
+		// Invalid name
 		AppointmentService.addAppointment(new Date(151, 10, 10, 10, 10, 10), 	"000000000000000000000000000000000000000000000000000");
 	}
 		
 	// Test Appointment Service finder with valid query
+	@SuppressWarnings("deprecation")
 	@Test
 	@Order(3)
 	void test_AppointmentService_Finder_Valid() {

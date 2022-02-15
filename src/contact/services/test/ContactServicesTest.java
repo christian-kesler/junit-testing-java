@@ -38,10 +38,15 @@ public class ContactServicesTest {
 	@Test
 	@Order(2)
 	void test_AddInvalidEntry_ContactService() {
+		// Invalid first name		
 		ContactService.addContact("Dorotheology", 	"ONE", 			"1111111111", 		"home1");
+		// Invalid last name
 		ContactService.addContact("two", 			"Jamesonitus", 	"2222222222", 		"home2");
+		// Invalid short phone number
 		ContactService.addContact("three", 			"THREE", 		"333", 				"home3");
+		// Invalid long phone number
 		ContactService.addContact("four", 			"FOUR", 		"4444444444444", 	"home4");
+		// Invalid address
 		ContactService.addContact("five", 			"FIVE", 		"5555555555", 		"asdasdasdasdasdasdasdasdasdasdasdasd");
 	}
 
