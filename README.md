@@ -79,21 +79,26 @@ Christian Kesler (a.k.a. KnowOne), who can be found on <a target='blank' href='h
 <h3>Version History</h3>
 <ul>
 <li>
-v1.0.0
+<a target='blank' href='https://github.com/christian-kesler/junit-testing-java/releases/tag/v1.0.0'>v1.0.0</a>
 <ul>
 <li>
 Initial Release upon completion of the CS-320 course at Southern New Hampshire University
 </li>
+</ul>
+</li>
 <li>
-See commit change or See release history
+<a target='blank' href='https://github.com/christian-kesler/junit-testing-java/releases/tag/v1.1.0'>v1.1.0</a>
+<ul>
+<li>
+Enhanced Revision created during the CS-499 course at Southern New Hampshire University
 </li>
 </ul>
 </li>
 <li>
-v1.1.0
+<a target='blank' href='https://github.com/christian-kesler/junit-testing-java/releases/tag/v1.2.0'>v1.2.0</a>
 <ul>
 <li>
-Enhanced Revision created during the CS-499 course at Southern New Hampshire University
+ePortfolio Release containing my final enhancements for use within the CS-499 Computer Science Capstone course
 </li>
 </ul>
 </li>
@@ -114,5 +119,4 @@ Southern New Hampshire University, Computer Science 320:  Software Test, Automat
 <a target='blank' href='https://gist.github.com/DomPizzie/7a5ff55ffa9081f2de27c315f5018afc'>README Template</a>
 </li>
 </ul>
-
 </html>
